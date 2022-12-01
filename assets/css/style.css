@@ -153,6 +153,33 @@ body.active {
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
+.navbar,
+.header .btn{
+  display: none;
+}
+
+.header{
+  background-color: var(--oxford-blue);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-block: 12px;
+  box-shadow: var(--shadow-1);
+  z-index: 4;
+}
+
+.header.active{
+  position: fixed;
+  animation: slideInTop 0.5s ease forwards;
+}
+
+@keyframes slideInTop{
+  0%{transform: translateY(-100%);}
+  100%{transform: translateY(0);}
+}
+
+
 
 /*-----------------------------------*\
   #HERO
