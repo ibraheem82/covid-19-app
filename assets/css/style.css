@@ -157,7 +157,7 @@ body.active {
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
-.navbar,
+
 .header .btn{
   display: none;
 }
@@ -203,6 +203,44 @@ body.active {
 .nav-toggle-btn .menu,
 .nav-toggle-btn.active .close{
   display: block;
+}
+
+
+.navbar{
+  position: absolute;
+  top: 74px;
+  left: -350px;
+  width: 100%;
+  max-width: 350px;
+  height: 100vh;
+  background-color: var(--oxford-blue);
+  padding: 20px;
+  transition: 0.25s var(--cubic-out);
+  visibility: hidden;
+}
+
+
+
+.navbar.active{
+  visibility: visible;
+  transform: translateX(350px);
+  transition-duration: 0.5s;
+
+}
+
+
+.navbar-item:not(:last-child) {
+  border-block-end: 1px solid var(--black_20);
+}
+
+
+.navbar-link{
+  padding-block: 10px;
+  transition: var(--transition-1);
+}
+
+.navbar-link:is(:hover, :focus) {
+  color: var(--winter-sky);
 }
 /*-----------------------------------*\
   #HERO
