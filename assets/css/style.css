@@ -150,6 +150,10 @@ body.active {
   #REUSED STYLE
 \*-----------------------------------*/
 
+.container{
+  padding-inline: 15px;
+}
+
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -179,8 +183,27 @@ body.active {
   100%{transform: translateY(0);}
 }
 
+.header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-toggle-btn{
+  color: var(--white);
+  font-size: 35px;
+}
+
+.nav-toggle-btn.active .menu,
+.nav-toggle-btn .close{
+  display: none;
+}
 
 
+.nav-toggle-btn .menu,
+.nav-toggle-btn.active .close{
+  display: block;
+}
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
