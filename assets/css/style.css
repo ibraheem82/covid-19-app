@@ -97,7 +97,7 @@ img {
 }
 
 button {
-  background-color: none;
+  background: none;
   border: none;
   font: inherit;
   cursor: pointer;
