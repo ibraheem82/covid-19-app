@@ -190,6 +190,11 @@ h4{
   border-radius: var(--radius-pill);
   transition: var(--transition-1);
 }
+
+
+.btn-primary:is(:hover, :focus){
+  box-shadow: var(--shadow-2);
+}
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
