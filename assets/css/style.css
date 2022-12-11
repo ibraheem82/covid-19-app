@@ -170,6 +170,26 @@ body.active {
   line-height: 1.4;
 }
 
+
+h1{
+  font-size: var(--fs-2);
+}
+
+h4{
+  font-size: var(--fs-4);
+}
+
+
+.btn{
+  font-size: var(--fs-6);
+  font-weight: var(--fs-700);
+  text-transform: uppercase;
+  max-width: max-content;
+  border: 2px solid var(--white);
+  padding: 18px 25px;
+  border-radius: var(--radius-pill);
+  transition: var(--transition-1);
+}
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
