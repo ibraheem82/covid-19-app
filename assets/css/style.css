@@ -218,6 +218,20 @@ h4{
 }
 
 
+
+.grid-list{
+  display: grid;
+  gap: 30px;
+}
+
+.img-cover{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-2);
+}
+
+
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -436,10 +450,114 @@ h4{
 /*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/
+.service{
+  text-align: center;
+}
+
+
+.service-list{
+  display: grid;
+  gap: 10px;
+}
+
+.service-card{
+  background-color: var(--oxford-blue_50);
+  padding: 20px;
+  border-radius: var(--radius-6);
+  transition: var(--transition-1);
+}
+
+
+.service-card .card-banner{
+  max-width: max-content;
+  margin-inline: auto;
+  border-radius: var(--radius-circle);
+}
+
+
+.service-card .card-banner img{
+  width: 95px;
+}
+
+.service-card .card-title{
+  margin-block:20px 5px ;
+}
+
+.service-card :is(.card-title, .card-text){
+  transition: var(--transition-1);
+}
+
+.service-card:hover{
+  background-color: var(--white);
+  transform: translateY(-5px);
+}
+
+
+.service-card:hover .card-title{
+  color: var(--black);
+}
+
+
+.service-card:hover .card-text{
+  color: var(--dim-gray);
+}
+
 
 /*-----------------------------------*\
   #DOCTOR
 \*-----------------------------------*/
+
+.doctor :is(.section-title, .section-text) {
+  text-align: center;
+}
+
+
+.doctor-card{
+  background-color: var(--oxford-blue_70);
+  padding: 10px;
+}
+
+
+.doctor-card:is(:hover, :focus-within) .img-cover{
+  transform: scale(1.05);
+}
+
+
+.doctor-card .card-content{
+  padding: 20px;
+}
+
+.doctor-card .card-subtitle{
+  margin-block: 5px 10px;
+}
+
+.doctor-card .card-text{
+  border-block-start: 1px solid var(--cultured_20);
+  padding-block-start: 15px;
+  margin-block-end: 20px;
+}
+
+.doctor-card .card-item{
+  border: 1px solid var(--cultured_20);
+  display: flex;
+  align-items: center;
+}
+
+.doctor-card .card-item:last-child{
+  border-block-start: none;
+}
+
+.doctor-card .card-item .icon-box{
+  color: var(--silver);
+  padding: 22px;
+  border-inline-end: 1px solid var(--cultured_20);
+}
+
+.doctor-card .card-item .span{
+  margin-inline: 15px;
+  padding-block: 5px;
+  word-break: break-all;
+}
 
 /*-----------------------------------*\
   #SAFETY
