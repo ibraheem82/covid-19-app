@@ -132,6 +132,7 @@ body.active {
 :focus-visible {
   outline-offset: 4px;
 }
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -139,25 +140,28 @@ body.active {
 ::-webkit-scrollbar-track {
   background-color: hsl(0, 0%, 98%);
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: hsl(0, 0%, 98%);
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background-color: hsl(0, 0%, 70%);
 }
+
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container{
+.container {
   padding-inline: 15px;
 }
 
-.section{
+.section {
   padding-block: var(--section-padding);
 }
 
-.has-bg-image{
+.has-bg-image {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -166,21 +170,21 @@ body.active {
 .h1,
 .h2,
 .h3,
-.h4{
+.h4 {
   line-height: 1.4;
 }
 
 
-h1{
+h1 {
   font-size: var(--fs-2);
 }
 
-h4{
+h4 {
   font-size: var(--fs-4);
 }
 
 
-.btn{
+.btn {
   font-size: var(--fs-6);
   font-weight: var(--fs-700);
   text-transform: uppercase;
@@ -193,38 +197,38 @@ h4{
 
 
 /* * when the button is hovered or focused */
-.btn-primary:is(:hover, :focus){
+.btn-primary:is(:hover, :focus) {
   box-shadow: var(--shadow-2);
 }
 
-.w-100{
+.w-100 {
   width: 100%;
 }
 
 
-.text{
+.text {
   font-size: var(--fs-5);
 }
 
-.img-holder{
+.img-holder {
   aspect-ratio: var(--width) / var(--height);
   background-color: var(--light-gray);
   overflow: hidden;
 }
 
 
-.section-text{
+.section-text {
   margin-block: 15px 35px;
 }
 
 
 
-.grid-list{
+.grid-list {
   display: grid;
   gap: 30px;
 }
 
-.img-cover{
+.img-cover {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -236,11 +240,11 @@ h4{
   #HEADER
 \*-----------------------------------*/
 
-.header .btn{
+.header .btn {
   display: none;
 }
 
-.header{
+.header {
   background-color: var(--oxford-blue);
   position: absolute;
   top: 0;
@@ -251,40 +255,45 @@ h4{
   z-index: 4;
 }
 
-.header.active{
+.header.active {
   position: fixed;
   animation: slideInTop 0.5s ease forwards;
 }
 
-@keyframes slideInTop{
-  0%{transform: translateY(-100%);}
-  100%{transform: translateY(0);}
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
-.header .container{
+.header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav-toggle-btn{
+.nav-toggle-btn {
   color: var(--white);
   font-size: 35px;
 }
 
 .nav-toggle-btn.active .menu,
-.nav-toggle-btn .close{
+.nav-toggle-btn .close {
   display: none;
 }
 
 
 .nav-toggle-btn .menu,
-.nav-toggle-btn.active .close{
+.nav-toggle-btn.active .close {
   display: block;
 }
 
 
-.navbar{
+.navbar {
   position: absolute;
   top: 74px;
   left: -350px;
@@ -299,7 +308,7 @@ h4{
 
 
 
-.navbar.active{
+.navbar.active {
   visibility: visible;
   transform: translateX(350px);
   transition-duration: 0.5s;
@@ -312,7 +321,7 @@ h4{
 }
 
 
-.navbar-link{
+.navbar-link {
   padding-block: 10px;
   transition: var(--transition-1);
 }
@@ -320,39 +329,40 @@ h4{
 .navbar-link:is(:hover, :focus) {
   color: var(--winter-sky);
 }
+
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
 
 
-.hero{
+.hero {
   padding-block-start: calc(var(--section-padding) + 75px);
 }
 
-.hero .container{
+.hero .container {
   display: grid;
   gap: 20px;
 }
 
-.hero-text{
+.hero-text {
   font-size: var(--fs-3);
   font-weight: var(--fw-500);
   margin-block: 8px;
 }
 
-.hero .counter{
+.hero .counter {
   color: var(--medium-spring-green);
   font-size: var(--fs-2);
   font-weight: var(--fw-700);
 }
 
-.hero-list{
+.hero-list {
   margin-block: 8px 20px;
 }
 
-.hero-list-item{
+.hero-list-item {
   position: relative;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: var(--fs-4);
@@ -362,7 +372,7 @@ h4{
 }
 
 
-.hero-list-item::before{
+.hero-list-item::before {
   content: "";
   position: absolute;
   left: 0;
@@ -374,32 +384,32 @@ h4{
   border-radius: var(--radius-circle);
 }
 
-.hero-list-item.yellow::before{
+.hero-list-item.yellow::before {
   background-color: var(--orange-peel);
 }
 
-.hero-list-item.green::before{
+.hero-list-item.green::before {
   background-color: var(--malachite);
 }
 
-.hero-list-item.red::before{
+.hero-list-item.red::before {
   background-color: var(--red-orange-creyola);
 }
 
 
-.hero-banner .w-100{
+.hero-banner .w-100 {
   animation: rotate 20s linear infinite;
 }
 
 @keyframes rotate {
-  0%{
+  0% {
     transform: rotate(0);
   }
 
-  100%{
+  100% {
     transform: rotate(360deg);
   }
-  
+
 }
 
 
@@ -409,40 +419,40 @@ h4{
 \*-----------------------------------*/
 
 
-.about .container{
+.about .container {
   display: grid;
   gap: 30px;
 }
 
 
-.about-subtitle{
+.about-subtitle {
   font-size: var(--fs-4);
   color: var(--medium-spring-green);
 }
 
-.about .section-text{
+.about .section-text {
   margin-block: 8px 15px;
 }
 
-.about-list{
+.about-list {
   margin-block-start: 30px;
 }
 
 
-.about-item{
+.about-item {
   display: flex;
   align-items: flex-start;
   gap: 15px;
   padding-block: 15px;
 }
 
-.about .item-img{
+.about .item-img {
   flex-shrink: 0;
   border-radius: var(--radius-circle);
 }
 
 
-.about .item-title{
+.about .item-title {
   margin-block-end: 5px;
 }
 
@@ -450,17 +460,17 @@ h4{
 /*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/
-.service{
+.service {
   text-align: center;
 }
 
 
-.service-list{
+.service-list {
   display: grid;
   gap: 10px;
 }
 
-.service-card{
+.service-card {
   background-color: var(--oxford-blue_50);
   padding: 20px;
   border-radius: var(--radius-6);
@@ -468,37 +478,37 @@ h4{
 }
 
 
-.service-card .card-banner{
+.service-card .card-banner {
   max-width: max-content;
   margin-inline: auto;
   border-radius: var(--radius-circle);
 }
 
 
-.service-card .card-banner img{
+.service-card .card-banner img {
   width: 95px;
 }
 
-.service-card .card-title{
-  margin-block:20px 5px ;
+.service-card .card-title {
+  margin-block: 20px 5px;
 }
 
-.service-card :is(.card-title, .card-text){
+.service-card :is(.card-title, .card-text) {
   transition: var(--transition-1);
 }
 
-.service-card:hover{
+.service-card:hover {
   background-color: var(--white);
   transform: translateY(-5px);
 }
 
 
-.service-card:hover .card-title{
+.service-card:hover .card-title {
   color: var(--black);
 }
 
 
-.service-card:hover .card-text{
+.service-card:hover .card-text {
   color: var(--dim-gray);
 }
 
@@ -512,48 +522,48 @@ h4{
 }
 
 
-.doctor-card{
+.doctor-card {
   background-color: var(--oxford-blue_70);
   padding: 10px;
 }
 
 
-.doctor-card:is(:hover, :focus-within) .img-cover{
+.doctor-card:is(:hover, :focus-within) .img-cover {
   transform: scale(1.05);
 }
 
 
-.doctor-card .card-content{
+.doctor-card .card-content {
   padding: 20px;
 }
 
-.doctor-card .card-subtitle{
+.doctor-card .card-subtitle {
   margin-block: 5px 10px;
 }
 
-.doctor-card .card-text{
+.doctor-card .card-text {
   border-block-start: 1px solid var(--cultured_20);
   padding-block-start: 15px;
   margin-block-end: 20px;
 }
 
-.doctor-card .card-item{
+.doctor-card .card-item {
   border: 1px solid var(--cultured_20);
   display: flex;
   align-items: center;
 }
 
-.doctor-card .card-item:last-child{
+.doctor-card .card-item:last-child {
   border-block-start: none;
 }
 
-.doctor-card .card-item .icon-box{
+.doctor-card .card-item .icon-box {
   color: var(--silver);
   padding: 22px;
   border-inline-end: 1px solid var(--cultured_20);
 }
 
-.doctor-card .card-item .span{
+.doctor-card .card-item .span {
   margin-inline: 15px;
   padding-block: 5px;
   word-break: break-all;
@@ -562,6 +572,55 @@ h4{
 /*-----------------------------------*\
   #SAFETY
 \*-----------------------------------*/
+
+.safety .section-text {
+  margin-block-end: 55px;
+}
+
+
+.safety {
+  text-align: center;
+}
+
+
+.safety-list {
+  display: grid;
+  gap: 50px;
+}
+
+
+
+
+.safety-item {
+  position: relative;
+}
+
+
+.safety-item .item-banner {
+  max-width: max-content;
+  border-radius: var(--radius-circle);
+  margin-inline: auto;
+  margin-block-end: 20px;
+}
+
+
+.safety-item .number {
+  position: absolute;
+  top: -21px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: var(--caribbean-green);
+  display: grid;
+  place-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-circle);
+  border: 3px solid var(--oxford-blue);
+  font-weight: var(--fw-700);
+}
+
+
+
 
 /*-----------------------------------*\
   #BLOG
