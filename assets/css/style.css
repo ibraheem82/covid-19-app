@@ -671,6 +671,54 @@ h4 {
   #FOOTER
 \*-----------------------------------*/
 
+
+.footer-top {
+  display: grid;
+  gap: 60px;
+}
+
+.footer-list-title,
+.footer-text {
+  margin-block-end: 15px;
+}
+
+
+.contact-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+}
+
+.contact-item:not(:last-child) {
+  margin-block-end: 15px;
+}
+
+.contact-title {
+  font-size: var(--fs-5);
+  font-weight: var(--fw-700);
+}
+
+
+.footer-list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-block-start: 15px;
+}
+
+
+
+.footer-list:not(.social-list) ion-icon {
+  font-size: 14px;
+}
+
+
+.footer-bottom {
+  padding-block: 35px;
+  text-align: center;
+  border-block-start: 1px solid var(--cultured_20);
+}
+
 /*-----------------------------------*\
   #BACK TO TOP
 \*-----------------------------------*/
