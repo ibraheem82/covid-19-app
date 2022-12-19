@@ -924,5 +924,7 @@ h4 {
     padding: 30px;
   }
 
-
+  .service-card .card-banner {
+    flex-shrink: 0;
+  }
 }
