@@ -937,4 +937,11 @@ h4 {
   .safety-list {
     grid-template-columns: repeat(3, 1fr);
   }
+
+
+  /* * FOOTER */
+
+  .footer-top {
+    grid-template-columns: 1fr 0.5fr 0.5fr 0.75fr;
+  }
 }
