@@ -746,3 +746,88 @@ h4 {
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+
+
+/* * Responsiveness for screens larger that > 575px */
+
+@media (min-width:575px) {
+
+  /* CUSTOM PROPERTY */
+  :root {
+    /* * TYPOGRAPHY */
+    --fs-2: 3.6rem;
+    --fs-3: 2.4rem;
+  }
+
+
+  /* * REUSED STYLES */
+  .container {
+    max-width: 540px;
+    max-width: 100%;
+    margin-inline: auto;
+  }
+
+
+  .h2 {
+    font-size: var(--fs-1);
+  }
+
+  .h4 {
+    --fs-4:
+      2rem;
+  }
+
+  .text {
+    font-size: unset;
+  }
+
+
+  /* * HERO */
+
+  .hero-list {
+    max-width: 275px;
+  }
+
+  /* * SAFETY */
+
+  .safety-list,
+  footer-top {
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+
+
+
+
+/* * Responsiveness for screens larger that > 768px */
+
+@media (min-width:768px) {
+
+  /* *REUSED STYLED */
+  .container {
+    max-width: 720px;
+  }
+
+  .grid-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  /* * HERO */
+
+  .hero.container {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+
+  /* * ABOUT */
+  .about-banner {
+    max-width: max-content;
+  }
+
+
+}
