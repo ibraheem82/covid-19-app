@@ -818,7 +818,7 @@ h4 {
 
   /* * HERO */
 
-  .hero.container {
+  .hero .container {
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
@@ -827,6 +827,77 @@ h4 {
   /* * ABOUT */
   .about-banner {
     max-width: max-content;
+  }
+
+  /* * SERVICES */
+  .service-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+/* * Responsiveness for screens larger that > 992px */
+
+@media (min-width:992px) {
+
+  /* * CUSTOM PROPERTY */
+  :root {
+    /* * TYPOGRAPHY */
+    --fs-2: 6rem;
+  }
+
+  /* * REUSED */
+
+  .container {
+    max-width: 960px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section-text {
+    max-width: 70ch;
+    margin-inline: auto;
+  }
+
+
+  /* * HEADER */
+
+  .nav-toggle-btn {
+    display: none;
+  }
+
+  .header {
+    background-color: transparent;
+    box-shadow: none;
+    padding-block: 20px;
+  }
+
+  .header.active {
+    background-color: var(--oxford-blue);
+    box-shadow: var(--shadow-1);
+  }
+
+  .navbar,
+  .navbar.active {
+    all: unset;
+    display: block;
+  }
+
+  .navbar-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .navbar-item:not(:last-child) {
+    border: none;
+  }
+
+  .header .btn {
+    display: block;
+    padding-inline: 40px;
+  }
+
+  .header .btn:is(:hover, :focus) {
+    box-shadow: var(--shadow-3);
   }
 
 
