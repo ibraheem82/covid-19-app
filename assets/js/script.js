@@ -8,7 +8,7 @@ const addEventOnElem = function (elem, type, callback) {
             elem[i].addEventListener(type, callback);
         }
     } else {
-            elem.addEventListener(type, callback);
+        elem.addEventListener(type, callback);
     }
 }
 
@@ -42,15 +42,18 @@ const closeNavbar = function () {
 addEventOnElem(navbarLinks, "click", closeNavbar)
 
 
-// * active header when window scroll down to 100px
+// * active header and back to top  when window scroll down to 100px
 
 const header = document.querySelector("[data-header]");
+const backTopBtn = document.querySelector("[data-back-top-btn]");
 const activeElemOnScroll = function () {
     // * if the window is be scrolled vertically more than 100px 
-if (window.scrollY > 100) {
-    header.classList.add("active");
-} else {
-    header.classList.remove("active");
-}
+    if (window.scrollY > 100) {
+        header.classList.add("active");
+        backTopBtn.classList.add("active");
+    } else {
+        header.classList.remove("active");
+        backTopBtn.classList.remove("active");
+    }
 }
 addEventOnElem(window, "scroll", activeElemOnScroll)
