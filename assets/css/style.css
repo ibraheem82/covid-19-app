@@ -927,4 +927,8 @@ h4 {
   .service-card .card-banner {
     flex-shrink: 0;
   }
+
+  .service-card.card-title {
+    margin-block: 0 10px;
+  }
 }
