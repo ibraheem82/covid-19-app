@@ -988,4 +988,14 @@ h4 {
     --fs-2:
       8rem;
   }
+
+
+  /* SAFETY */
+  .safety .section-text {
+    margin-block-end: 80px;
+  }
+
+  .safety-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
