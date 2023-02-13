@@ -84,18 +84,18 @@
           <div class="hero-content">
             <h1 class="h1 hero-title">COVID-19 Tracker</h1>
             <p class="hero-text">Total Confirmed Corona Cases</p>
-            <data class="counter" value="960708">960708</data>
+            <data class="counter" value="" id="total"></data>
             <ul class="hero-list">
               <li class="hero-list-item yellow">
-                Active cases <span class="span">799571</span>
+                Active cases <span class="span" id="active"></span>
               </li>
 
               <li class="hero-list-item green">
-                Recovered cases <span class="span">302826</span>
+                Recovered cases <span class="span" id="recovered"></span>
               </li>
 
               <li class="hero-list-item red">
-                Deaths <span class="span">52558</span>
+                Deaths <span class="span" id="deaths"></span>
               </li>
             </ul>
 
@@ -989,8 +989,7 @@
 
 
 
-
-
+  <script src="assets/js/api.js" defer></script>
   <script src="assets/js/script.js" defer></script>
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
