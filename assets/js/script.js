@@ -56,4 +56,6 @@ const activeElemOnScroll = function () {
         backTopBtn.classList.remove("active");
     }
 }
-addEventOnElem(window, "scroll", activeElemOnScroll)
+addEventOnElem(window, "scroll", activeElemOnScroll);
+
+
