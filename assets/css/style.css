@@ -384,6 +384,10 @@ h4 {
   border-radius: var(--radius-circle);
 }
 
+.hero-list-item.white::before {
+  background-color: var(--white);
+}
+
 .hero-list-item.yellow::before {
   background-color: var(--orange-peel);
 }
