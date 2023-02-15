@@ -6,11 +6,13 @@ fetch('https://api.apify.com/v2/key-value-stores/tVaYRsPHLjNdNBu7S/records/LATES
     // console.log(datas.find(countries => countries.country === 'Nigeria'));
     const getIn = datas.find(countries => countries.country === 'Nigeria')
     console.log(getIn)
-    const { infected, recovered, deceased } = getIn;
+    const { infected, recovered, deceased, activeCases } = getIn;
     let add = infected + recovered + deceased;
+    const numOfActiveCases = activeCases;
     const numRecoveredPeople = recovered;
     const numDeceasedPeople = deceased
-    
+    const totalActiveCases = document.getElementById('active');
+    totalActiveCases.innerHTML = `${numOfActiveCases}`;
     const totalCases = document.getElementById('total');
     const recoveredCases = document.getElementById('recovered');
     recoveredCases.innerHTML = `${numRecoveredPeople}`;
